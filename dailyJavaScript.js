@@ -86,10 +86,12 @@ function oddEven(n) {
 //word count 
 function wordCount(string) {
     const count = string.split(" ");
+    const char = string.split("")
     const wordCount = count.length;
-    return wordCount;
+    const charCount = char.length;
+    return [wordCount, charCount];
 }
 const myArr = [1, 2, 3, 4];
-const myString = "I am Osman";
+const myString = "I am Osman Farooque";
 
 console.log(wordCount(myString))
