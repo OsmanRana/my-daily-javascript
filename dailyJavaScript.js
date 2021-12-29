@@ -55,8 +55,8 @@ function arrayMultiply(arr) {
 //array of a given number
 function arrayOfNumber(n) {
     let numbers = [];
-    for (let i = 0; i < n; i++) {
-        numbers.push(i + 1);
+    for (let i = 1; i <= n; i++) {
+        numbers.push(i);
     }
     return numbers;
 }
@@ -64,11 +64,11 @@ function arrayOfNumber(n) {
 function evenOddNumberArray(n) {
     let even = [];
     let odd = [];
-    for (let i = 0; i < n; i++) {
+    for (let i = 1; i <= n; i++) {
         if (((i + 1) % 2) === 0) {
-            even.push(i + 1)
+            even.push(i)
         } else {
-            odd.push(i + 1)
+            odd.push(i)
         }
     }
     return [even, odd];
@@ -91,7 +91,34 @@ function wordCount(string) {
     const charCount = char.length;
     return [wordCount, charCount];
 }
-const myArr = [1, 2, 3, 4];
+
+//get the even numbers from an array
+//dividible by 2 -> arr[i] % 2 === 0
+
+function evenFromArray(arr) {
+    let evenArray = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            evenArray.push(arr[i]);
+        }
+    }
+    return evenArray;
+}
+
+//get the odd number from an array
+//not divisilble by 2 -> arr[i] !== 0
+
+function oddFromArray(arr) {
+    let oddArray = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 !== 0) {
+            oddArray.push(arr[i]);
+        }
+    }
+    return oddArray;
+}
+const myArr = [1, 2, 3, 4, 5, 6, 11, 15, 20];
 const myString = "I am Osman Farooque";
 
-console.log(wordCount(myString))
+
+console.log(oddFromArray(myArr))
