@@ -117,8 +117,20 @@ function oddFromArray(arr) {
     }
     return oddArray;
 }
+
+//find a value in an array
+//check an item exists in an array -> arr[i] === [n]
+function checkItem (arr, n) {
+    for (let i = 0; i < arr.length; i++ ){
+        if (arr[i] === n) {
+            return true;
+        }else {
+            return false;
+        }
+    }
+}
 const myArr = [1, 2, 3, 4, 5, 6, 11, 15, 20];
 const myString = "I am Osman Farooque";
 
 
-console.log(oddFromArray(myArr))
+console.log(checkItem(myArr, 1))
