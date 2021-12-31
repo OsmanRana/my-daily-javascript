@@ -129,8 +129,18 @@ function checkItem (arr, n) {
         }
     }
 }
+
+//multiply the first n numbers from an array
+//multiply each number untill it reach the nth number 
+function multiplyNthNumber (arr, n) {
+    let product = 1;
+for (let i = 0; i < n; i++){
+        product = product * arr[i]
+    }
+    return product;
+}
 const myArr = [1, 2, 3, 4, 5, 6, 11, 15, 20];
 const myString = "I am Osman Farooque";
 
 
-console.log(checkItem(myArr, 1))
+console.log(multiplyNthNumber(myArr, 3))
