@@ -15,4 +15,25 @@ function squreNumber (n){
 //Given a binary array nums, return the maximum number of consecutive 1's in the array.
 //loop through the array
 //check the item is 1 or 0
-console.log(squreNumber(10))
+//find a starting point and ending point
+
+const myArr =[1,2,3,4,5];
+//inserting items at the end
+ myArr.push(7);
+//inserting items at the start
+myArr.unshift(6);
+//removing the last item
+myArr.pop(2)
+//removing from the begining
+myArr.shift()
+//search an item
+function searchItem (i) {
+    if(myArr.includes(i)){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
+console.log(searchItem (3))
