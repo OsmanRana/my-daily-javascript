@@ -36,7 +36,9 @@ function searchItem (i) {
 };
 //replacing an item 
 myArr[2] = 9 ;
+//deleting an item
+delete myArr[0]
 //checking the type
 let type = typeof myArr;
 let type1 = Array.isArray(myArr)
-console.log(type1)
+console.log(myArr)
