@@ -40,17 +40,15 @@ const contacts = [
 
   function lookUpProfile(arr, name) {
     // Only change code below this line
-    let fullName = []
+    
     for (let i = 0; i < arr.length; i++){
-        if (arr[i].firstName === name){
-            firstName.push(arr[i].firstName)
-        }
-        
-      
+        if (arr[i].firstName.toLowerCase() === name.toLowerCase()){
+            return (arr[i].firstName + " " +arr[i].lastName); 
+        } 
     }
-    return fullName;
+    return "No such contact"
+    
     // Only change code above this line
   }
   
-  console.log(lookUpProfile(contacts));
-  console.log(contacts.length);
+  console.log(lookUpProfile(contacts, "rana"));
