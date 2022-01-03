@@ -139,8 +139,17 @@ for (let i = 0; i < n; i++){
     }
     return product;
 }
+
+//random fraction 
+function randomFraction () {
+    return Math.random();
+}
+//random fraction 
+function randomWholeNumber () {
+    return Math.floor(Math.random()*10);
+}
 const myArr = [1, 2, 3, 4, 5, 6, 11, 15, 20];
 const myString = "I am Osman Farooque";
 
 
-console.log(multiplyNthNumber(myArr, 3))
+console.log(randomWholeNumber ())

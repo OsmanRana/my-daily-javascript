@@ -38,12 +38,16 @@ const contacts = [
     },
   ];
 
-  function lookUpProfile(arr, name) {
+  function lookUpProfile(arr, name, props) {
     // Only change code below this line
     
     for (let i = 0; i < arr.length; i++){
         if (arr[i].firstName.toLowerCase() === name.toLowerCase()){
-            return (arr[i].firstName + " " +arr[i].lastName); 
+            if(arr[i].hasOwnProperty(props)) {
+                return [arr[i][props], (arr[i].firstName + " " +arr[i].lastName)] ;
+            } else {
+                return "No such property";
+            }
         } 
     }
     return "No such contact"
@@ -51,4 +55,4 @@ const contacts = [
     // Only change code above this line
   }
   
-  console.log(lookUpProfile(contacts, "rana"));
+  console.log(lookUpProfile(contacts, "Sherlock", "likes"));
