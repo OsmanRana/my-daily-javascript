@@ -21,9 +21,19 @@ while(num<=10){
     console.log(i)
 } */
 
-var arr = [12, 45, 76, 32, 59, 36, 58, 55];
+/* var arr = [12, 45, 76, 32, 59, 36, 58, 55];
 
 for(var i = 0; i < arr.length; i = i+2){
     var num = arr[i];
     console.log(num);
+} */
+
+var itemNames = ['mug', 'mouse', 'headphone', 'pen'];
+for (i = 0; i < itemNames.length; i++){
+    var item = itemNames[i]
+    if(item == 'headphone'){
+        break;
+    }
+    console.log(item);
+   
 }
