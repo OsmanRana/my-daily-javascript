@@ -1,4 +1,3 @@
-
 // var num = 0;
 // while(num<7){
 //     console.log(num);
@@ -21,19 +20,53 @@ while(num<=10){
     console.log(i)
 } */
 
-/* var arr = [12, 45, 76, 32, 59, 36, 58, 55];
+// var arr = [12, 45, 76];
 
-for(var i = 0; i < arr.length; i = i+2){
-    var num = arr[i];
-    console.log(num);
-} */
+// var arrLength = arr.length * 2 
 
-var itemNames = ['mug', 'mouse', 'headphone', 'pen'];
-for (i = 0; i < itemNames.length; i++){
+// for(var i = 0; i < arrLength; i++){
+//     var num = arr[i];
+//     console.log(num);
+//     if (arr[i]==undefined){ 
+//         console.log(arr[i-5]);} 
+//         else{
+//         console.log(arr[i])
+//         }
+// } 
+
+// var itemNames = ["mug", "mouse", "headphone", "pen"];
+
+// var item = 0;
+// while (item < itemNames.length ) {
+//   console.log(itemNames[item]);
+//   item++;
+// }
+// var item = itemNames.length;
+// while (0 == itemNames.length ) {
+//   console.log(itemNames[item]);
+//   item--;
+// }
+/* for (i = 0; i < itemNames.length; i++){
     var item = itemNames[i]
     if(item == 'headphone'){
         break;
     }
     console.log(item);
    
+} */
+// let i = 0;
+
+// while (i < itemNames.length) {
+//     console.log(itemNames[i]);
+//     i++;
+// }
+
+var modules = ['Module Unlock', 'Watch Video And Practise', 'Taking Class Notes', 'Full Module Practise', 'Join Support Session'];
+
+
+for (var i = 0; i < modules.length; i++) {
+    for (j = 0; j < 2; j++) {
+        var module = modules[i];
+        console.log(module);
+    }
 }
