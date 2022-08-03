@@ -62,11 +62,18 @@ while(num<=10){
 // }
 
 var modules = ['Module Unlock', 'Watch Video And Practise', 'Taking Class Notes', 'Full Module Practise', 'Join Support Session'];
-
+/* 
 
 for (var i = 0; i < modules.length; i++) {
     for (j = 0; j < 2; j++) {
         var module = modules[i];
         console.log(module);
     }
+} */
+
+var numbers = 0;
+while(  numbers < 10){
+    console.log(numbers);
+    numbers = numbers + 2;
+    console.log(numbers)
 }
