@@ -17,15 +17,15 @@ function squreNumber (n){
 //check the item is 1 or 0
 //find a starting point and ending point
 
-const myArr =[1,2,3,4,5];
+// const myArr =[1,2,3,4,5];
 //inserting items at the end
- myArr.push(7);
+//  myArr.push(7);
 //inserting items at the start
-myArr.unshift(6);
+// myArr.unshift(6);
 //removing the last item
-myArr.pop()
+// myArr.pop()
 //removing from the begining
-myArr.shift()
+// myArr.shift()
 //search an item
 function searchItem (i) {
     if(myArr.includes(i)){
@@ -35,10 +35,28 @@ function searchItem (i) {
     }
 };
 //replacing an item 
-myArr[2] = 9 ;
+// myArr[2] = 9 ;
 //deleting an item
-delete myArr[0]
+// delete myArr[0]
 //checking the type
-let type = typeof myArr;
-let type1 = Array.isArray(myArr)
-console.log(myArr)
+// let type = typeof myArr;
+// let type1 = Array.isArray(myArr)
+// console.log(myArr)
+
+const myArr =[1,2,3,4,5];
+function oddFromArray(arr){
+    let oddNumbers =[];
+    for(let i = 0; i < arr.length; i++){
+        const index = i
+        const element = arr[index]
+        const reminder = element % 2;
+        if(reminder !== 0) {
+            oddNumbers.push(element)
+        }
+       
+    }
+    return oddNumbers;
+}
+
+const oddNumber = oddFromArray(myArr)
+console.log(oddNumber)

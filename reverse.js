@@ -4,6 +4,13 @@ while (num >= 1) {
   num--;
 } */
 
-for(var i = 10; i >= 1; i--){
+/* for(var i = 10; i >= 1; i--){
     console.log(i)
+} */
+var color = "g";
+if(color === "green"){
+  console.log("green")
+}
+else{
+  console.log("not green")
 }
