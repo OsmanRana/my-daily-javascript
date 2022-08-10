@@ -31,3 +31,20 @@ function namata(num){
   }
 }
 namata(13)
+//slmallest name
+
+function smallestName(names){
+  let smallest = names[0];
+  for(let i = 0; i < names.length; i++){
+    const index = i;
+    const name = names[i];
+    if(smallest.length > name.length){
+      smallest = name;
+    }
+  }
+  return smallest
+}
+
+const friendsName = ['osman', 'rana', 'orko', 'oronno', ]
+const smallName = smallestName(friendsName)
+console.log(smallName)
