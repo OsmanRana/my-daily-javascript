@@ -7,7 +7,7 @@ while (num >= 1) {
 /* for(var i = 10; i >= 1; i--){
     console.log(i)
 } */
-var color = "g";
+var co";
 if(color === "green"){
   console.log("green")
 }
